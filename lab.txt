@@ -1,0 +1,11 @@
+
+List of Software
+1. Visual Studio Code Editor  (https://code.visualstudio.com/ )
+2. Node.Js
+3. Git (https://git-scm.com/downloads)
+4. MySQL8 Database
+5. Postman
+6. Chrome Browser
+7. npm install -g @angular/cli (enter this command in command line )
+8. npm install -g nodemon (enter this command in command line)
+
