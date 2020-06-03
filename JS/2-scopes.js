@@ -47,15 +47,68 @@ f1();
 
 */
 
+
+/*
 var v = 12;
 function f1() {
     function f2() {
         console.log(v); // ?
     }
-
     f2();
     //var v=13; // before creation of f2 function, in f1 function v is created with undefined
-
 }
 
 f1();
+
+*/
+
+//var v = 120;
+//var v = 130;
+//console.log(v);
+
+//var v = 12;
+//{
+// v=13;
+//  console.log(v); 
+//}
+//console.log(v);
+
+// use let insted var  // --> Es6
+//let v=12;
+//let v=13;
+
+/*
+let v = 12;
+{
+    let v = 13;
+    console.log(v);
+}
+
+console.log(v);
+
+*/
+
+
+/*
+
+let v = 12;
+function f1() {
+
+    function f2() {
+        console.log(v);
+    }
+    f2();
+   // let v = 13; // error
+}
+
+f1();
+
+*/
+
+
+let v=100;
+
+console.log(v);
+
+
+
