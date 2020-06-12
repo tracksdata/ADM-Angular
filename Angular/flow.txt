@@ -1,0 +1,25 @@
+Angular flow
+
+==> index.html, reads custom sector name
+==> then loads main.ts file from src folder
+==> then bootstrap a module name . i.e bootstrapModule(AppModule)
+    AppModule is aviable in src/app/app.mudule.ts file
+==> in app.module.ts file @NgModule bootstraps a componet in bootstrap 
+    section i.e bootstrap: [AppComponent]
+    AppComponent is a type script class which is aviable under src/app/app.component.ts file
+==> in AppComponent class, @Component decarator, reads sector name. 
+   what is a selector?
+   ------------------
+   wheere ever placing name of sector, corresponding htmlTemple template replaces
+
+
+
+
+   cli commands to create component
+
+   ng generate component greet
+
+   notes: do not add any components keywords for the newly creating component
+   ex: ng generate component greetcomponent is wrong
+   ng generate component greetcomponent internally creates component name as
+   class name as GreetComponentComponent

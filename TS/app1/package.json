@@ -1,0 +1,11 @@
+{
+  "name": "app1",
+  "version": "1.1.1",
+  "description": "mp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm build"
+  },
+  "author": "praveen",
+  "license": "ISC"
+}
