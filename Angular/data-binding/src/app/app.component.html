@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="alert alert-info text-center">
+    <h1>Angular APP</h1>
+  </div>
+
+  <h2>Name: {{pname}} </h2>
+  <h2>Person: {{person.name}} </h2>
+  <h2>Numbers: {{numbers}}</h2>
+
+  Name: <input [value]="pname" />
+
+  <select>
+    <option>Left</option>
+    <option>Center</option>
+    <option>Right</option>
+  </select>
+  <h1 [align]="heading_position">Hello</h1>
+
+  <div>
+    <h2>Hello Angular</h2>
+  </div>
+</div>
+
+
+<button (click)="display()">Hide Div</button>
+<button (click)="displayV1()">Show Div</button>
+<button (click)="displayV2()">Toogle Div</button>
+
+<hr/> <hr/>
+
+<h1>Person Name:  {{pname}}</h1>
+
+<input type="text" [(ngModel)]="pname"  >
+
+
+<div [hidden]="hideDiv">
+  <h1>Div Data</h1>
+</div>
+<hr/>
+
+<img [src]="imagePath">

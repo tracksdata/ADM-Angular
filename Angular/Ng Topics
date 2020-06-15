@@ -1,0 +1,65 @@
+NG Topics
+----------
+1. Components
+2. Bindings
+3. diretives
+
+
+
+
+
+Data Binding in Angular
+-------------------------
+1. String interpolation -> rendering property data from type script file into HTML
+        {{}}
+2. Property binding
+    TS --> HTML
+        []
+6. event binding
+    HTML --> TS
+        ()
+7. Two way binding - by default is disable in angulart
+   [(ngModel)] ->  TS <----> HTML   
+   put banana in the box
+   football operator
+  
+
+=====================
+Attibute binding
+class binding
+style binding
+
+
+
+Data types in TS
+
+1. Boolean
+2. Number
+3. String
+4. Array
+5. Any
+6. Void
+7.Null and Undefined
+8.Object
+
+
+
+Angular Diretives
+-------------------
+
+1. Component Diretives
+2. Attribute Diretives
+3. Structural Diretives
+
+
+2. Attribute Diretives
+-------------------------
+1. ngStyle, ngSwitch, ngModel, ngClass
+
+3. Structural Diretives
+    1. ngIf
+    2. ngFor
+
+
+
+

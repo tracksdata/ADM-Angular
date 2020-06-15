@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>Angular directives</h1>
+
+  <table class="table table-hover">
+
+      <thead>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Description</th>
+      </thead>
+   
+
+    <tbody>
+
+
+      <tr *ngFor="let prod of products">
+       
+        <td>{{prod.id}}</td>
+        <td>{{prod.name}}</td>
+        <td>{{prod.price}}</td>
+        <td>{{prod.description}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+
+  <hr />
+
+  <h1>Show Data:{{showData}} </h1>
+  Hide: <input type="checkbox" name="statusCheck" [(ngModel)]="showData" />
+
+  <div *ngIf="!showData">
+    Name: Praveen
+  </div>
+
+
+</div>
