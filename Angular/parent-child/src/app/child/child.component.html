@@ -1,0 +1,22 @@
+<div>
+    <h1>Child Component</h1>
+
+
+    <div *ngIf="logedIn">
+        <h3>Welcome back!</h3>
+    </div>
+
+    <div *ngIf="!logedIn">
+        <h3>Login again</h3>
+    </div>
+
+    <div>
+        <h3>Id: {{personObj.id}}</h3>
+        <h3>Name: {{personObj.name}}</h3>
+        <h3>Address: {{personObj.address}}</h3>
+    </div>
+
+    <hr/>
+
+
+</div>

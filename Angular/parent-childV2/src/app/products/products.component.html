@@ -1,0 +1,13 @@
+<table>
+    <thead>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prod of products">
+            <app-product [product]=prod></app-product>
+        </tr>
+    </tbody>
+</table>

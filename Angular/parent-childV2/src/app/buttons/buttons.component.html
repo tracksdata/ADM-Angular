@@ -1,0 +1,10 @@
+<div>
+
+</div>
+<div *ngFor="let btn of genButtons" class="mystyles">
+    <div class="card card-body">
+        <button (click)="totalHits()" class="btn btn-primary">{{btn}}</button>
+        <hr />
+        <span class="badge badge-warning">{{total}}</span>
+    </div>
+</div>

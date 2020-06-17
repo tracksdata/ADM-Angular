@@ -63,3 +63,10 @@ Angular Diretives
 
 
 
+Component Communications
+
+1. Parent to Child 
+        @Input Decarator
+2. Child to Parent
+        @Output decarator using EventEmitter
+
