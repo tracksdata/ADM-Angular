@@ -1,0 +1,16 @@
+<div class="container">
+<h1>Parent Component</h1>
+
+<form>
+  User: <input type="text" name="userName" [(ngModel)]="userName">
+  <button  type="submit" (click)="handleSubmit($event)">Submit</button>
+</form>
+
+<h3>{{userName}}</h3>
+
+<button (click)="logedUser=true">Login</button>  
+<button (click)="logedUser=false" >Logout</button>{{logedUser}}
+<hr/>
+<app-child [logedIn]="logedUser"></app-child>
+
+</div>

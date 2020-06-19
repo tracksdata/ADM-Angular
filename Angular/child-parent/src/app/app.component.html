@@ -1,0 +1,26 @@
+<div class="container mt-3">
+
+
+  <div class="card">
+
+    <div class="card-header bg-primary text-center">
+      <h1>Counter APP</h1>
+    </div>
+
+    <div class="card-body text-center">
+      <app-counter [btnLable]="+10" (noOfHits)="totalCount(10)"></app-counter>
+      <app-counter btnLable="+20" (noOfHits)="totalCount(20)"></app-counter>
+      <app-counter [btnLable]="-5" (noOfHits)="totalCount(-5)"></app-counter>
+      <app-counter btnLable="-10" (noOfHits)="totalCount(-10)"></app-counter>
+      
+    </div>
+<br/>
+    <div class="card-foter bg-info text-center">
+      <h1>Total Count:<span class="badge badge-danger">{{total}}</span>  </h1>
+    </div>
+
+  </div>
+  <hr/>
+
+</div>
+
