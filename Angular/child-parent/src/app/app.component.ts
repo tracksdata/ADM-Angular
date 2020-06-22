@@ -9,6 +9,7 @@ export class AppComponent {
   count = 0;
   total = 0;
   initialValue = 0;
+  buttons=[1,2,3,4,-5,6,7,8,9,10]
 
   
   totalCount(countValue) {

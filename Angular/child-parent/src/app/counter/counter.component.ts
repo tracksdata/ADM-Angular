@@ -19,6 +19,6 @@ export class CounterComponent {
 
   btnCount() {
     this.count = this.count + 1;
-    this.noOfHits.emit(this.count);
+    this.noOfHits.emit();
   }
 }

@@ -7,20 +7,19 @@
       <h1>Counter APP</h1>
     </div>
 
-    <div class="card-body text-center">
-      <app-counter [btnLable]="+10" (noOfHits)="totalCount(10)"></app-counter>
-      <app-counter btnLable="+20" (noOfHits)="totalCount(20)"></app-counter>
-      <app-counter [btnLable]="-5" (noOfHits)="totalCount(-5)"></app-counter>
-      <app-counter btnLable="-10" (noOfHits)="totalCount(-10)"></app-counter>
+    <div class="row">
+      <div *ngFor="let btnValue of buttons">
+        
+          <app-counter [btnLable]="btnValue" (noOfHits)="totalCount(btnValue)"></app-counter>
       
+      </div>
     </div>
-<br/>
+
+    <br />
     <div class="card-foter bg-info text-center">
-      <h1>Total Count:<span class="badge badge-danger">{{total}}</span>  </h1>
+      <h1>Total Count:<span class="badge badge-danger">{{total}}</span> </h1>
     </div>
+
+    <hr />
 
   </div>
-  <hr/>
-
-</div>
-

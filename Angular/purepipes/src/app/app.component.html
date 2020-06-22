@@ -1,0 +1,77 @@
+<div class="container">
+
+  <h2>Original Title: {{pageTitle}}</h2>
+  <h2>Title in Uppercase : {{pageTitle | uppercase}}</h2>
+  <h2>Title in Lowercase : {{pageTitle | lowercase}}</h2>
+  <hr />
+
+  <b>Search For: </b>
+  <input name="searchText" [(ngModel)]="searchText" class="form-control col-5" placeholder="Type City name here" />
+  <br>
+  <div *ngFor="let city of cities | cityFilter : searchText">
+
+    <li>{{city}}</li>
+
+  </div>
+
+
+  <hr />
+
+  <h2>BAD: Product in JSON: without pipe {{getProduct}}</h2>
+  <hr />
+  <h2>GOOD: Product in JSON: With pipe {{product | json}}</h2>
+  <hr />
+
+  <h2> Percentage: {{2365 | percent}}</h2>
+  <h2> Percentage: {{00.565 | percent}}</h2>
+  <hr />
+
+  <h2>Decimal: {{4565.87384686}} </h2>
+  <h2>Decimal: {{4565.87384686 | number:'1.3'}} </h2>
+  <hr />
+
+
+  <h2>Today's Date - Original : {{todayDate}}</h2>
+  <h2>Today's Date - : {{todayDate | date}}</h2>
+  <h2>Today's Date - (d/M/yyyy) : {{todayDate | date:'d/M/yyyy'}}</h2>
+  <h2>Today's Date - (d/Myy) : {{todayDate | date:'d/M/yy'}}</h2>
+  <h2>Today's Date - (dd/MM/yyyy) : {{todayDate | date:'d/MM/yyyy'}}</h2>
+  <h2>Today's Date - (MM/d/yyyy) : {{todayDate | date:'MM/d/yyyy'}}</h2>
+  <h2>Today's Date - (MM/d/yyyy) : {{todayDate | date:'MM/dd/yyyy'}}</h2>
+  <h2>Today's Date - (MM-d-yyyy) : {{todayDate | date:'MM-dd-yyyy'}}</h2>
+  <h2>Today's Date - (dd-MM-yyyy) : {{todayDate | date:'dd-MM-yyyy'}}</h2>
+  <h2>Today's Date - (dd-MMM-yyyy) : {{todayDate | date:'dd-MMM-yyyy'}}</h2>
+  <h2>Today's Date - (dd-MMMM-yyyy) : {{todayDate | date:'dd-MMMM-yyyy'}}</h2>
+  <hr />
+  <h2>US Currency: {{1500 | currency}}</h2>
+  <h2>Indian Currency: {{1500 | currency:'INR'}}</h2>
+  <h2>EUR Currency: {{1500 | currency:'EUR'}}</h2>
+
+  <hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

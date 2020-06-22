@@ -70,3 +70,62 @@ Component Communications
 2. Child to Parent
         @Output decarator using EventEmitter
 
+
+
+
+Terminal commans in Angular
+To create new app
+
+ng new app1
+to add a new component to an existing application
+cd app1
+ng generate component greet
+
+To add a class to an existing application
+ng generate class product
+to add a new service to an existing application
+ng generate service productservice
+
+to generate new pipe 
+ng generate pipe mypipename
+
+
+to run application
+npm start
+  or
+ng serve --open
+
+
+
+
+
+
+
+
+Pipes in Angular
+Pipes formats the content in the tewmplates.
+
+Two types
+1. Pure pipes
+2. Impure pipes
+
+1. Pure pipes
+----------------
+All pure pipes in angular are builtin pipes
+ex:
+1. Lowercase
+2. Uppercase
+3. Datepipe
+4. Currencypipe
+5. Jsonpipe
+6. Percentage pipe
+7. Decimal pipe
+8. Slice pipe
+
+
+2. Impure pipes
+-----------------
+Any kind of pipe which triggers all the time by using keyboard, mouse events
+
+Ex:
+All custom pipes created by the programmer
