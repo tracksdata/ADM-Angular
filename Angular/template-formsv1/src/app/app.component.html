@@ -1,0 +1,51 @@
+<div class="container">
+  <h1>Welcome</h1>
+  <hr/>
+
+  <form #myForm="ngForm" autocomplete="off">
+    <div>
+      <input type="text"  name="id" ngModel #id="ngModel" placeholder="id" required/>
+      <span *ngIf="!id.dirty">ID is Required</span>
+      </div>
+
+    <div>
+      <input type="text" name="name" ngModel placeholder="name" required/>
+    </div>
+
+    <div>
+      <button  (click)="handleSubmit(myForm)">Save</button>
+    </div>
+  </form>
+
+  <hr/>
+
+  <h2>Touched: {{id.touched}}</h2>
+  <h2>Untouched: {{id.untouched}}</h2>
+  <hr/>
+  <h2>Dirty: {{id.dirty}} </h2>
+  <h2>Pristine: {{id.pristine}} </h2>
+
+
+  <hr/>
+
+  <div>
+    <h6>Form Valid: {{myForm.valid}}</h6>
+
+
+  </div>
+<hr/>
+  <table border="1">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+    </tr>
+
+    <tr *ngFor="let product of products">
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+    </tr>
+  </table>
+
+
+
+</div>

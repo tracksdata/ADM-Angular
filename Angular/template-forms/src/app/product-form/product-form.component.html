@@ -4,31 +4,36 @@
         <div class="card-header">Product Form</div>
         <div class="card-body">
           <div>
-            <form autocomplete="off" (submit)="handleSubmit(s1.value,s2.value,s3.value,s4.value)">
+            <form #productForm="ngForm" autocomplete="off" (submit)="handleSubmit(productForm)">
               <div>
                 <label>Product ID</label>
-                <input name="id" #s1 class="form-control" />
+                <input name="id" #id  ngModel class="form-control"  value="{{product.id}}" required/>
               </div>
 
               <div>
                 <label>Product Name</label>
-                <input name="name" #s2 class="form-control" />
+                <input name="name"  #name ngModel class="form-control"  value="{{product.name}}" required/>
               </div>
 
               <div>
                 <label>Price</label>
-                <input name="price" #s3 class="form-control" />
+                <input name="price" #price ngModel class="form-control" value="{{product.price}}" required/>
               </div>
 
               <div>
                 <label>Description</label>
-                <textarea  #s4 name="description" class="form-control"></textarea>
+                <textarea #description  ngModel class="form-control"name="description" class="form-control" value="{{product.description}}"></textarea>
               </div>
 
-              <div class="form-group mt-2 text-center">
-                <button type="submit" class="btn btn-primary btn-space">Save</button>
-                <button class="btn btn-danger btn-space">Cancel</button>
-                <button class="btn btn-warning btn-space">Reset</button>
+              <div [hidden]="updateForm" class="form-group mt-2 text-center">
+                <button  class="btn btn-primary btn-space" [disabled]="!productForm.valid">Save</button>
+                <button disabled class="btn btn-danger btn-space">Cancel</button>
+                <button type="reset" class="btn btn-warning btn-space">Reset</button>
+              </div>
+              <div [hidden]="!updateForm" class="form-group mt-2 text-center">
+                <button (click)="updateProduct({id:id.value,name:name.value,price:price.value,description:description.value})" class="btn btn-primary btn-space">Update</button>
+                <button (click)="updateForm=false"   class="btn btn-"class="btn btn-danger btn-space">Cancel</button>
+                <button type="reset" class="btn btn-warning btn-space">Reset</button>
               </div>
             </form>
           </div>
@@ -36,6 +41,6 @@
       </div>
     </div>
     <div class="col-6 col-md-6">
-     <app-list-products [products]="newProducts" ></app-list-products>
+     <app-list-products [products]="products" (formData)="update($event)"></app-list-products>
     </div>
   </div>

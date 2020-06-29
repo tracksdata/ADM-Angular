@@ -6,8 +6,10 @@
         <th>Description</th>
     </thead>
     <tbody>
+
         <tr *ngFor="let prod of products">
-            <td>{{prod.id}}</td>
+
+            <td><a type='button' (click)="hello(prod)">{{prod.id}}</a></td>
             <td>{{prod.name}}</td>
             <td>{{prod.price}}</td>
             <td>{{prod.description}}</td>

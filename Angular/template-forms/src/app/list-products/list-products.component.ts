@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input ,EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-list-products',
@@ -10,6 +10,16 @@ export class ListProductsComponent  {
   @Input()
   products:any;
 
-  
+  @Output()
+  formData=new EventEmitter();
+
+
+  hello(data){
+    console.log(data);
+    this.formData.emit(data);
+    
+  }
+
+
 
 }

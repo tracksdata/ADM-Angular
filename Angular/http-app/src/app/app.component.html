@@ -1,0 +1,29 @@
+<div>
+  <h1>Http Call Demo</h1>
+  <hr />
+
+  <button (click)="displayUsers()">Load Users</button>
+
+  <hr/>
+
+
+  <table>
+<tr>
+  <th>SNO</th>
+  <th>Name</th>
+  <th>user name</th>
+  <th>email address</th>
+
+</tr>
+
+<tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+
+
+</tr>
+
+  </table>
+</div>
